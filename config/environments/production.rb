@@ -89,7 +89,7 @@ Rails.application.configure do
       storage: :s3,
       s3_protocol: 'http',
       s3_credentials: {
-        bucket: ENV.fetch("lrileygrahamlongo-bucket"),
+        bucket: ENV.fetch("arn:aws:s3:::lrileygrahamlongo-bucket"),
         access_key_id: ENV.fetch("AKIAJAGQC7VFLGBKIJAQ"),
         secret_access_key: ENV.fetch("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"),
         s3_region: ENV.fetch("us-east-1"),
