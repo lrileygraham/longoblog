@@ -83,16 +83,4 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-
-    # Amazon S3 settings for Paperclip uploads
-    config.paperclip_defaults = {
-      storage: :s3,
-      s3_protocol: 'http',
-      s3_credentials: {
-        bucket: ENV.fetch("lrileygrahamlongo-bucket"),
-        access_key_id: ENV.fetch("AKIAJV5RYBN5B7ITFJCA"),
-        secret_access_key: ENV.fetch("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"),
-        s3_region: ENV.fetch("us-east-1"),
-      }
-    }
 end
