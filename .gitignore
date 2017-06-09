@@ -22,3 +22,6 @@
 
 # Ignore files which contain AWS keys
 .env
+
+# Ignore application configuration
+/config/application.yml
