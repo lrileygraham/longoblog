@@ -1,7 +1,11 @@
+<h3>We're about to have a baby! We will document the journey here. Buckle up, and have fun!</h3><br/>
+
 <% @posts.each do |post| %>
-<div class ="post_wrapper">
-    <p><%= image_tag post.image.url(:large) %></p>
-  <h2 class="title"><%= link_to post.title, post %></h2>
-  <p class="date"><%= post.created_at.strftime("%B, %d, %Y")%></p>
+<ul class="bio-recently col-2">
+  <li>
+      <span><%= image_tag post.image.url(:thumb) %></span>
+      <p><%= link_to post.title, post %><br/><small><%= post.created_at.strftime("%B, %d, %Y")%></small></p>
+  </li>
+</ul>
+  <% end %>
 </div>
-<% end %>
