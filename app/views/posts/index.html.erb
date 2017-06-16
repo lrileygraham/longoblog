@@ -3,7 +3,7 @@
 <% @posts.each do |post| %>
 <ul class="bio-recently col-2">
   <li>
-      <span><%= image_tag post.image.url(:thumb) %></span>
+      <span><%= image_tag post.image.url(:medium) %></span>
       <p><%= link_to post.title, post %><br/><small><%= post.created_at.strftime("%B, %d, %Y")%></small></p>
   </li>
 </ul>
