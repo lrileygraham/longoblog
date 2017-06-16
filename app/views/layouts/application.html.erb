@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title> The Longos | LongoBlog </title>
+
+<%= csrf_meta_tags %>
+<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Raleway:400,700' %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+</head>
+
+
+<div id="pagewrap">
+  <header id="header">
+    <div id="nav">
+
+      <a title="Home" class="tw" href="/"><svg title="tw logo"><use xlink:href="#icon-tw"></use></svg></a>
+
+      <ul>
+        <li class="articles"><%= link_to "All posts", posts_path %></li>
+        <li class="notes"> <% if !user_signed_in? %><%= link_to "Sign in", new_post_path %><% end %></li>
+        <% if user_signed_in? %>
+          <li><%= link_to "New Post", new_post_path %></li>
+          <li><%= link_to "Logout", destroy_user_session_path, :method => :delete %></li>
+        <% end %>
+      </ul>
+    </div>
+  </header>
+
+
+  <main role="main">
+    <section class="content">
+      <div class="centered">
+          <%= yield %>
+    </section>
+
+  </main>
+
+
+
+<footer id="footer">
+  <div class="grid-unit">
+		<span class="twitter">
+			<a href="http://www.rileyisme.com">
+				<svg title="twitter icon"><use xlink:href="#icon-twitter"></use></svg> My website
+			</a>
+		</span>
+	</div>
+	<div class="grid-unit">
+		<span class="paravel">
+			<a href="https://twitter.com/@lrileygraham">
+				<svg title="twitter icon"><use xlink:href="#icon-paravel"></use></svg> Twitter
+			</a>
+		</span>
+		<span class="rss">
+			<a href="http://instagram.com/rilesworth">
+				<svg title="rss icon"><use xlink:href="#icon-rss"></use></svg> Instagram
+			</a>
+		</span>
+	</div>
+</footer>
+
+
+
+</div><!-- end pagewrap -->
+</body>
+</html>
