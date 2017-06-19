@@ -375,7 +375,7 @@ a:hover.tw {
 #nav ul li {
   display: inline;
   margin-right: 0.875em;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.03em; }
 
 #nav ul li:last-child {
@@ -383,7 +383,8 @@ a:hover.tw {
 
 #nav li a {
   color: #3a3a3a;
-  padding: 0.5em 0; }
+  padding: 0.5em 0;
+  font-size: 1.5em; }
 
 #nav a:hover {
   color: #e86c40; }
@@ -543,6 +544,23 @@ a:hover.tw {
 #icon-twitter, #icon-paravel, #icon-rss {
   fill: rgba(0, 0, 0, 0.15); }
 
+.twitter svg,
+.paravel svg,
+.rss svg {
+  width: 1.75em;
+  height: 2em;
+  display: inline; }
+
+.twitter svg {
+  margin: 0 0.2em -0.6em 0; }
+
+.paravel svg {
+  width: 1em;
+  margin: 0 0.2em -0.55em 0; }
+
+.rss svg {
+  width: 0.8em;
+  margin: 0 0.2em -0.6em 0; }
 
 #footer .grid-unit {
   float: none; }
