@@ -950,3 +950,25 @@ a.fusiontext, .carbon-text {
   		}
   	}
   }
+
+  a svg {
+    width: 4rem;
+    height: 4rem;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    transition: all 0.2s;
+  }
+
+  a svg:hover {
+    -webkit-transform: translate(0, -10px);
+    transform: translate(0, -10px);
+  }
+
+
+  a svg:hover g rect:last-child{
+    stroke: #e86c40 !important;
+  }
+
+  a svg:hover g + path{
+    fill: green !important;
+  }
