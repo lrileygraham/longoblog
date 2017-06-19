@@ -296,14 +296,6 @@ ul {
     margin-right: 3%; } }
 /*These durn things below are from me retrofitting older posts. I don't even know.*/
 
-.logo {
-  width: 300px;
-  height: 300px;
-  background-image: url(assets/images/logo.svg);
-  background-position: center top;
-  padding:0px;
-  margin: 0 auto;
-}
 
 @media only screen and (min-width: 20em) {
   .logo {
@@ -368,12 +360,6 @@ img.assoc {
 #icon-tw {
   fill: #3a3a3a; }
 
-a.tw svg, a.tw {
-  width: 4.2em;
-  height: 4.2em;
-  display: block;
-  margin: 0 auto; }
-
 a.tw {
   border-radius: 10em;
   transition: background-color 0.3s ease-out; }
@@ -415,11 +401,7 @@ a:hover.tw {
     margin-top: 1.7em; } }
 @media (min-width: 600px) {
   #header {
-    padding: .56em 1em .56em .75em; }
-
-  a.tw svg {
-    width: 4.1em;
-    height: 4.1em; }
+    padding: 1.125em 2em 1.125em 1.5em; }
 
   a.tw {
     width: 5em;
@@ -427,7 +409,7 @@ a:hover.tw {
     padding: 0 0.1em 0.1em 0; }
 
   #nav ul {
-    margin-top: 1.125em; }
+    margin-top: 2.125em; }
 
   #nav ul li {
     margin-right: 1.3em; } }
@@ -561,23 +543,6 @@ a:hover.tw {
 #icon-twitter, #icon-paravel, #icon-rss {
   fill: rgba(0, 0, 0, 0.15); }
 
-.twitter svg,
-.paravel svg,
-.rss svg {
-  width: 1.75em;
-  height: 2em;
-  display: inline; }
-
-.twitter svg {
-  margin: 0 0.2em -0.6em 0; }
-
-.paravel svg {
-  width: 1em;
-  margin: 0 0.2em -0.55em 0; }
-
-.rss svg {
-  width: 0.8em;
-  margin: 0 0.2em -0.6em 0; }
 
 #footer .grid-unit {
   float: none; }
