@@ -98,14 +98,13 @@ Rails.application.configure do
 
 end
 
-config.action_mailer.default_url_options = { :host => 'longoblog.herokuapp.com' }
-ActionMailer::Base.smtp_settings = {
-  :user_name            => ENV['SENDGRID_USERNAME'],
-  :password             => ENV['SENDGRID_PASSWORD'],
-  :address              => "smtp.sendgrid.net",
-  :port                 => 587,
-  :enable_starttls_auto => true,
-  :authentication       => :plain,
-  :domain               => "yourdomain.com"
-}
-end
+    config.action_mailer.default_url_options = { :host => 'longoblog.herokuapp.com' }
+    ActionMailer::Base.smtp_settings = {
+      :user_name            => ENV['SENDGRID_USERNAME'],
+      :password             => ENV['SENDGRID_PASSWORD'],
+      :address              => "smtp.sendgrid.net",
+      :port                 => 587,
+      :enable_starttls_auto => true,
+      :authentication       => :plain,
+      :domain               => "yourdomain.com"
+    }
