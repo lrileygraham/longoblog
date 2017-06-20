@@ -108,3 +108,4 @@ ActionMailer::Base.smtp_settings = {
   :authentication       => :plain,
   :domain               => "yourdomain.com"
 }
+end
