@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-us">
+<head profile="http://www.w3.org/2005/10/profile">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<link rel="shortcut icon" href="/favicon.ico">
 
 <title> The Longos | LongoBlog </title>
 
@@ -38,15 +41,11 @@
 
       <ul>
         <li class="articles"><%= link_to "All posts", posts_path %></li>
-
-        
         <li class="notes"> <% if !user_signed_in? %><%= link_to "Sign in", new_post_path %><% end %></li>
         <% if user_signed_in? %>
           <li><%= link_to "New Post", new_post_path %></li>
           <li><%= link_to "Logout", destroy_user_session_path, :method => :delete %></li>
         <% end %>
-
-
       </ul>
     </div>
   </header>
