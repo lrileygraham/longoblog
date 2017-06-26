@@ -8,4 +8,5 @@ Rails.application.routes.draw do
 
     root "posts#index"
 
+    get '/photos', to: 'photos#index'
 end
