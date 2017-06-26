@@ -40,10 +40,10 @@
 
 
       <ul>
-        <li class="articles"><%= link_to "All posts", posts_path %></li>
+        <li class="articles"><%= link_to "Posts", posts_path %></li>
+        <li class="articles"><%= link_to "Photos", photos_path %></li>
         <li class="notes"> <% if !user_signed_in? %><%= link_to "Sign in", new_post_path %><% end %></li>
         <% if user_signed_in? %>
-          <li><%= link_to "New Post", new_post_path %></li>
           <li><%= link_to "Logout", destroy_user_session_path, :method => :delete %></li>
         <% end %>
       </ul>

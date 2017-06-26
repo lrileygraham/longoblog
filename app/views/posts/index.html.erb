@@ -1,5 +1,10 @@
 <h3>We're about to have a baby! We will document the journey here. Buckle up, and have fun!</h3><br/>
 
+
+<% if user_signed_in? %>
+<p><%= link_to "New Post", new_post_path %></p>
+<% end %>
+
 <% @posts.each do |post| %>
 <ul class="bio-recently col-2">
   <li>

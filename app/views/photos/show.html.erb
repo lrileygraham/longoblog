@@ -1,0 +1,13 @@
+<div id="post_content">
+  <%= image_tag @photo.image.url(:large) %>
+
+<p class="date">
+  Submitted <%= time_ago_in_words(@photo.created_at) %> Ago
+  <% if user_signed_in? %>
+    | <%= link_to 'Edit', edit_photo_path(@photo) %>
+    | <%= link_to 'Delete', photo_path(@photo), method: :delete, data: { confirm:'Are you sure?' } %>
+  <% end %>
+</p>
+
+  </div>
+</div>
