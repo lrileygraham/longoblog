@@ -1,5 +1,11 @@
 <div id="post_content">
-  <%= image_tag @photo.image.url(:large) %>
+
+<p class="page">
+<%= link_to "last", @photo.prev %>
+| <%= link_to "next", @photo.next %>
+</p>
+<%= image_tag @photo.image.url(:large) %>
+
 
 <p class="date">
   Submitted <%= time_ago_in_words(@photo.created_at) %> Ago
@@ -8,6 +14,8 @@
     | <%= link_to 'Delete', photo_path(@photo), method: :delete, data: { confirm:'Are you sure?' } %>
   <% end %>
 </p>
+
+
 
   </div>
 </div>
